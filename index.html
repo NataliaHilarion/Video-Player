@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
-  <title>Video Player</title>
+  <title>video player</title>
 </head>
+
 <body>
+
   <div class="wrapper">
     <div class="player">
-      <video id="video" poster="./images/ImagenFondo.jpg" src="./videos/lofi.mp4" width="600"></video>
+      <video class="video" id="video" src="./video/video.mp4" poster="./images/imagendefondo.png" > </video>
       <div class="player-overlay">
-        <h2 class="player-title">Musica para programar</h2>
+        <h2 class="player-title"> Musica para Programar</h2>
         <div class="player-actions">
-          <button class="button" id="backward" title="Retroceder" aria-label="Retroceder"></button>
-          <button class="button" id="play" title="Reproducir" aria-label="Reproducir"></button>
-          <button class="button" hidden id="pause" hidden title="Pausar" aria-label="Pausar"></button>
-          <button class="button" id="forward" title="Adelantar" aria-label="Adelantar"></button>
+          <button class="button" id="backward" title="backward" aria-label="backward"></button>
+          <button class="button" id="play" title="play" aria-label="play"></button>
+          <button class="button" id="pause" hidden title="pause" aria-label="pause"></button>
+          <button class="button" id="forward" title="forward" aria-label="forward"></button>
         </div>
         <div class="player-progress">
-          <input id="progress" type="range" min="0" step="1" >
+          <input id="progress" type="range" min="0" step="1" value="0" >
         </div>
       </div>
     </div>
   </div>
 
-  <script src="./js/index.js"> </script>
+  <script src="./js/video.js">
+  </script>
+
 </body>
+
 </html>
