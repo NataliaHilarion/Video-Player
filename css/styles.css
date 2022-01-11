@@ -1,7 +1,7 @@
-@import 'buttons.css';
+@import './button.css';
 
 body{
-  background: #26B4BC;
+  background-color: rgb(16,0,65);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,51 +12,64 @@ body{
 
 .player{
   position: relative;
-}
-
-.player video{
-  inline-size: 100%;
-  aspect-ratio: 16/9;
-  vertical-align: middle;
-  object-fit: cover;
-}
-
-.player-title{
-  color: white;
-  position: absolute;
   inset-block-start: 20px;
-  margin: 0;
-  inset-inline-start: 20px;
-}
-
-.player-actions{
-  position: absolute;
-  inset: 0;
-display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.player-progress{
-  position: absolute;
-  inset-block-end: 0;
-  inset-inline: 0;
-  display: flex;
-  padding: 10px;
-}
-
-.player-progress input{
-  flex:1;
+  /* border: 10px solid red; */
 }
 
 .player-overlay{
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: .8s opacity;
+  transition: .3s opacity;
 }
 
 .player:hover .player-overlay{
   opacity: 1;
+}
+
+.player video {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  vertical-align: middle;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+.player-title{
+  color: white;
+  position: absolute;
+  margin: 0;
+  inset-inline-start: 32px;
+  inset-block-start: 15px;
+}
+
+.player-actions{
+  position: absolute;
+   /* border: 10px solid blue; */
+   inset: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+
+}
+
+.player-progress{
+  /* background-color: yellow; */
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  display: flex;
+  padding: 10px;
+
+}
+
+.player-progress input {
+  flex: 1;
+
+}
+
+.logo img {
+  max-inline-size: 50px;
+
 }
